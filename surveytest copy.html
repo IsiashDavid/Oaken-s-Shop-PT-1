@@ -1,0 +1,288 @@
+<html>
+<head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ranchers&display=swap" rel="stylesheet">
+<style>
+
+body {font-size: 24; font-family: Arial;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;}
+
+.hey {
+background-color:#8c5c47;
+font-family:arial; 
+width:50%; 
+text-align:center;
+}
+
+.box1 {
+background-color: #945f3f;
+width: 90%;
+margin: 50px auto 0;
+border: 2px;
+border-color: #4c2c17;
+border-radius: 10px;
+padding: 20px;
+border-style: solid;
+box-sizing: border-box;
+transition: scale(1);
+animation: pulse 0.6s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform:scale(0.95);
+  }
+
+  70% {
+    transform:scale(1.1);
+  }
+
+  100% {
+    transform-scale:(0.95);
+  }
+}
+
+.box2 {
+background: white;
+width: 90%;
+margin: 50px auto 0;
+border: 2px;
+border-color:#016180;
+border-radius: 10px;
+padding: 15px;
+border-style: solid;
+box-sizing: border-box;
+font-family:arial;
+box-shadow: black 0px 0px 20px 0px;
+opacity: 90%;
+}
+
+input[type=text] {
+width: 400px;
+font-size:24;
+text-align:center;
+transition: all 0.5s;
+padding: 10px;
+}
+
+.nameee {box-shadow: 0px 5px 5px 0px black;}
+
+.nameee:hover {
+background-color: #24528A;
+color: white;
+}
+
+.ooo:hover {
+  background-color: #649cdf;
+color:white;
+}
+
+
+select {
+width: 400px;
+font-size:24;
+text-align:center;
+padding: 10px;
+box-shadow: 0px 5px 5px 0px black;
+}
+
+input[type=number] {
+width: 100px;
+font-size:24;
+text-align:center;
+transition: all 0.5s;
+padding: 10px;
+}
+
+input[type=number]:hover {
+background-color: #649cdf;
+color: white;
+}
+
+input[type=submit] {
+width: 15%;
+height: 10%;
+font-size: 36;
+padding: 15px;
+background-color:#24528A;
+color:white;
+align-items: center;
+
+}
+
+.ranchers-regular {
+  font-family: "Ranchers", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.wot {
+font-size: 65;
+}
+
+.foot {position:absolute;}
+
+
+
+
+
+</style>
+</head>
+<body background="oakenshop.png">
+<div align="center" class="box1 ranchers-regular">
+<font class="wot" color="white"> WANDERING OAKEN'S TRADING POST AND SAUNA </font>
+<br> <font color="white" size="5" face="arial"> Made By: Micah Lui Jael Dayao and Isiash Carla Vera David of 8-Pearl </font>
+</div>
+
+<br>
+<div align="center" class="box2">
+<font size="8" color="#24528A"> <b>Hoo Hoo! Big Summer Blowout!</b> </font> <br>
+Welcome to Oaken's Shop! We humbly ask you to answer our survey below!<br>
+Your suggestions and feedback are greatly appreciated!
+
+<hr width="1000">
+<form>
+
+<b> Name </b><br>
+<input type="text" name="name" id="name" placeholder="Ex. Queen Elsa of Arendelle" required class="nameee"><br><br>
+
+<b> Occupation </b><br>
+<select name="occupation" id="occupation">
+<option value="Student"> Student </option>
+<option value="Teacher"> Teacher </option>
+<option value="Ice Queen"> Ice Queen </option>
+<option value="Ice Princess"> Ice Princess </option>
+<option value="Snowman"> Snowman </option>
+<option value="Other"> Other </option>
+</select><br><br>
+<hr width="1000">
+
+<b> What is/are your favorite item(s) in our shop? </b> <br>
+<input type="radio" id="c" name="c"> Carrots
+<input type="radio" id="b" name="b"> Bread
+<input type="radio" id="p" name="p"> Plants
+<input type="radio" id="s" name="s"> Swimsuits<br>
+<input type="radio" id="t" name="t"> Tools
+<input type="radio" id="sb" name="sb"> Sun Balm
+<input type="radio" id="ssb" name="ssb"> Snow Shoes and Boots
+<input type="radio" id="r" name="r"> Ropes<br><br>
+
+<b> Do you like our Sauna? </b><br>
+<input type="radio" name="sauna" id="saunayes"> I love it!
+<input type="radio" name="sauna" id="saunano"> Nope!
+<br><br>
+
+<b> Out of these features, which one would you like to see in our shop? </b><br>
+<input type="radio" name="sandwich" id="sandwich"> Sandwich Bar
+<input type="radio" name="pic" id="pic"> Photobooth
+<input type="radio" name="music" id="music"> Music Station
+<br><br>
+
+<b> How would you rate our customer service out of 10? </b><br>
+<input type="number" name="service" id="service"  min="0" max="10"><br><br>
+
+<b> How would you rate our store's ambience out of 10? </b><br>
+<input type="number" name="ambience" id="ambience"  min="0" max="10"><br><br>
+
+<b> How would you rate our store overall out of 10? </b><br>
+<input type="number" name="overall" id="overall"  min="0" max="10"><br><br>
+
+<b> How useful is our location overall out of 10? </b></br>
+<input type="number" name="location" id="location" min="0" max="10"><br><br>
+
+<b> How would you describe Oaken's personality? </b><br>
+<input type="text" name="oaken" id="oaken" placeholder="Ex. Friendly and Funny" class="ooo"><br><br>
+
+<b> Should our store open more branches? </b><br>
+<input type="radio" name="branch" id="branchyes"> Yes!
+<input type="radio" name="branch" id="branchno"> Nope!
+<br><br>
+
+<b> Would you recommend our store to others? </b><br>
+<input type="radio" name="recommend" id="recommendyes"> Absolutely!
+<input type="radio" name="recommend" id="recommendno"> No, sorry!
+<br><br>
+
+<b> Feedback and Suggestions! </b><br>
+<textarea id="feedback" rows="10" cols="60" required placeholder="Have anything you want to comment on? Place them here!"
+style="font-family: arial;
+font-size: 24;">
+</textarea>
+<br><br>
+<input type="submit" value="Submit" onclick="yes()">
+</form>
+</div>
+<br>
+
+<div class="foots">
+
+<img src="oaken (1).png" height="350px" width="350px" style="margin-left:0px;padding: 0;">
+<font color="white" size="8" class="foot ranchers-regular" style=" font-size: 65; padding-top: 85px; padding-bottom: 85px; padding-left:100px;padding-right: 100px; background-color: white; color:black; border-radius: 10px;"; text-align:center;>
+THANK YOU FOR ANSWERING! <br> COME BACK AGAIN, HOO-HOO! </font>
+</div>
+<script>
+
+function yes()
+{
+//value
+var name=document.getElementById("name").value;
+var occupation=document.getElementById("occupation").value;
+var car=document.getElementById("c").value;
+var sw=document.getElementById("s").value;
+var rope=document.getElementById("r").value;
+var tool=document.getElementById("t").value;
+var sb=document.getElementById("sb").value;
+var pla=document.getElementById("p").value;
+var bread=document.getElementById("b").value;
+var ssb=document.getElementById("ssb").value;
+var oaken=document.getElementById("oaken").value;
+var service=document.getElementById("service").value;
+var ambience=document.getElementById("ambience").value;
+var overall=document.getElementById("overall").value;
+var saunayes=document.getElementById("saunayes").value;
+var saunano=document.getElementById("saunano").value;
+var sandwich=document.getElementById("sandwich").value;
+var pic=document.getElementById("pic").value;
+var music=document.getElementById("music").value;
+var location=document.getElementById("location").value;
+var branchyes=document.getElementById("branchyes");
+var branchno=document.getElementById("branchno");
+var recommendyes=document.getElementById("recommendyes");
+var recommendno=document.getElementById("recommendno");
+
+
+//storage
+var name2=localStorage.setItem("name", name);
+var occupation2=localStorage.setItem("occupation", occupation);
+var car2=localStorage.setItem("c", c);
+var sw2=localStorage.setItem("s", s);
+var rope2=localStorage.setItem("r", r);
+var tool2=localStorage.setItem("t", t);
+var sb2=localStorage.setItem("sb", sb);
+var pla2=localStorage.setItem("p", p);
+var bread2=localStorage.setItem("b", b);
+var ssb2=localStorage.setItem("ssb", ssb);
+var oaken2=localStorage.setItem("oaken", oaken);
+var service2=localStorage.setItem("service", service);
+var ambience2=localStorage.setItem("ambience", ambience);
+var overall2=localStorage.setItem("overall", overall);
+var yes2=localStorage.setItem("yes", yes);
+var no2=localStorage.setItem("no", no);
+var sandwich2=localStorage.setItem("sandwich", sandwich);
+var pic2=localStorage.setItem("pic", pic);
+var music2=localStorage.setItem("music", music);
+var location2=localStorage.setItem("location", location)
+var branchyes2=localStorage.setItem("branchyes", branchyes)
+var branchno2=localStorage.setItem("branchno", branchno)
+var recommendyes2=localStorage.setItem("recommendyes", recommendyes)
+var recommendno2=localStorage.setItem("recommendno", recommendno)
+
+}
+
+</script>
+
+</body>
+</html>
